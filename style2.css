@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    
+}
+
+/* Header Styling */
+header {
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+   
+}
+
+/* Dropdown Content with Animation */
+.dropdown-content {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f4f4f4(78, 74, 74);
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    margin-top: 15px;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+/* Show dropdown on hover with animation */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+   
+}
+
+.nav-container {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo img {
+    height: 50px;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #fbc02d;
+    padding: 8px 25px;
+    border-radius: 4px;
+}
+
+
+.login-btn2 {
+    background-color: #1e417b;
+    padding: 8px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+
+/* Hero Section with Background */
+.hero {
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), 
+                url('images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    min-height: 100vh;
+
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: justify;
+    
+}
+
+.glass-card h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #222;
+}
+
+.glass-card p {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+    
+}
+
+/* Two-column layout */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.left-content {
+    flex: 2;
+
+}
+
+.right-sidebar {
+    flex: 1;
+    position: sticky;
+    top: 20px;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .right-sidebar {
+        position: static;
+    }
+}
+
+.clock-display {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background: white;
+    padding: 5px;
+    border-top: 10px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon { 
+    height: 70px; 
+}
+
+.divider { 
+    width: 1px; 
+    height: 50px; 
+    background: #ccc; 
+    margin: 0 20px; 
+}
+
+.qr-code { 
+    height: 80px; 
+}
+
+.footer-text {
+    text-align: left;
+    color: #666;
+    font-size: 12px;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    line-height: 1;
+    
+}
+
+
+
+
